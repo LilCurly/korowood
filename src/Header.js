@@ -5,31 +5,24 @@ import {React, Component} from 'react'
 import {Divide as Hamburger} from 'hamburger-react'
 import {withGetScreen} from 'react-getscreen'
 
+import HeaderLinks from './HeaderLinks'
+
 class Header extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            hamburgerToggled: false
-        };
     }
 
     render() {
-        const toggleHamburger = () => {
-            this.setState({
-                hamburgerToggled: !this.state.hamburgerToggled
-            })
-        }
-
         return(
             <div className="App-header">
                 <div className="Header-logo">
                     <img src={logo} alt="logo"/>
                 </div>
-                <div className="Header-links">
+                <div className="Header-right">
                     {
                         this.props.isMobile() ?
-                        <Hamburger toggled={this.state.hamburgerToggled} toggle={toggleHamburger} /> :
-                        <div></div>
+                        <Hamburger className="Header-hamburger" toggled={this.props.isHamburgerOpen} toggle={this.props.hamburgerHandler} /> :
+                        <HeaderLinks isHorizontal={true} />
                     }
                 </div>
             </div>
@@ -37,4 +30,4 @@ class Header extends Component {
     }
 }
 
-export default withGetScreen(Header)
+export default withGetScreen(Header, {mobileLimit: 780, tabletLimit: 1000, shouldListenOnResize: true})

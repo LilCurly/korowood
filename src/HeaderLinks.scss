@@ -1,0 +1,95 @@
+.Header-links {
+    list-style: none;
+}
+
+.Header-links-horizontal {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    li {
+      margin-left: 5px;
+      margin-right: 5px;
+      font-family: 'Roboto', sans-serif;
+      span {
+          cursor: pointer;
+          position: relative;
+          display: block;
+          text-transform: uppercase;
+          margin: 0px 0;
+          padding: 10px 15px;
+          text-decoration: none;
+          color: #262626;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          transition: .5s;
+          z-index: 1;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid #262626;
+            border-bottom: 2px solid #262626;
+            transform: scaleY(2);
+            opacity: 0;
+            transition: .3s;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #262626;
+            transform: scale(0);
+            opacity: 0;
+            transition: .3s;
+            z-index: -1;
+          }
+          &:hover {
+            color: #fff;
+            &:before {
+              transform: scaleY(1);
+              opacity: 1;
+            }
+            &:after {
+              transform: scaleY(1);
+              opacity: 1;
+            }
+          }
+        }
+  }
+}
+
+.Header-links-vertical {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    li {
+      margin: 0;
+      padding: 20px;
+      cursor: pointer;
+      &:hover {
+        transition-duration: 0.2s;
+        background-color: #262626;
+        color: #fff;
+      }
+      span {
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    li {
+        font-size: calc(13px + 7 * ((100vw - 1200px) / 800));
+    }   
+}
