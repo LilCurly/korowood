@@ -88,6 +88,11 @@
     }
 }
 
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1200px) {
     li {
         font-size: calc(13px + 7 * ((100vw - 1200px) / 800));

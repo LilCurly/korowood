@@ -4,7 +4,8 @@ import './App.scss';
 import { React, Component } from 'react'
 
 import Header from './Header'
-import HeaderHamburgerNavigation from './HeaderHamburgerNavigation';
+import HeaderHamburgerNavigation from './HeaderHamburgerNavigation'
+import AboutUsSection from './AboutUsSection'
 
 class App extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends Component {
       <div className="App">
         <Header isHamburgerOpen={this.state.isHamburgerOpen} hamburgerHandler={this.hamburgerHandler} />
         <HeaderHamburgerNavigation isHamburgerOpen={this.state.isHamburgerOpen} hamburgerHandler={this.hamburgerHandler} />
+        <AboutUsSection />
       </div>
     );
   }

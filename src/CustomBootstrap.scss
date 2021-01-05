@@ -1,0 +1,44 @@
+@import "~bootstrap/scss/bootstrap";
+
+.carousel-item {
+    height: calc(100vh - ((16vw * 0.2149) + 29px));
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 80%;
+    p {
+        size: 20px;
+        font-weight: 600;
+    }
+    h3 {
+        size: 24px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel-item {
+        height: 50vw;
+        min-height: 270px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .carousel-caption {
+        p {
+            font-size: calc(20px + 7 * ((100vw - 1200px) / 800));
+        }
+        h3 {
+            font-size: calc(24px + 7 * ((100vw - 1200px) / 800));
+        }
+    }
+}
