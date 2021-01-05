@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './Header.css'
+import './Header.scss'
 
 import {React, Component} from 'react'
 import {Divide as Hamburger} from 'hamburger-react'
