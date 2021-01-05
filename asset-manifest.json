@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/korowood/static/css/main.29d8ca82.chunk.css",
-    "main.js": "/korowood/static/js/main.10dc687d.chunk.js",
-    "main.js.map": "/korowood/static/js/main.10dc687d.chunk.js.map",
-    "runtime-main.js": "/korowood/static/js/runtime-main.602d80d1.js",
-    "runtime-main.js.map": "/korowood/static/js/runtime-main.602d80d1.js.map",
-    "static/js/2.b3a17350.chunk.js": "/korowood/static/js/2.b3a17350.chunk.js",
-    "static/js/2.b3a17350.chunk.js.map": "/korowood/static/js/2.b3a17350.chunk.js.map",
-    "static/js/3.d3d0a6d9.chunk.js": "/korowood/static/js/3.d3d0a6d9.chunk.js",
-    "static/js/3.d3d0a6d9.chunk.js.map": "/korowood/static/js/3.d3d0a6d9.chunk.js.map",
+    "main.css": "/korowood/static/css/main.ad2f4287.chunk.css",
+    "main.js": "/korowood/static/js/main.2995a595.chunk.js",
+    "main.js.map": "/korowood/static/js/main.2995a595.chunk.js.map",
+    "runtime-main.js": "/korowood/static/js/runtime-main.05b504eb.js",
+    "runtime-main.js.map": "/korowood/static/js/runtime-main.05b504eb.js.map",
+    "static/js/2.7bdb0d93.chunk.js": "/korowood/static/js/2.7bdb0d93.chunk.js",
+    "static/js/2.7bdb0d93.chunk.js.map": "/korowood/static/js/2.7bdb0d93.chunk.js.map",
+    "static/js/3.c5075988.chunk.js": "/korowood/static/js/3.c5075988.chunk.js",
+    "static/js/3.c5075988.chunk.js.map": "/korowood/static/js/3.c5075988.chunk.js.map",
     "index.html": "/korowood/index.html",
-    "static/css/main.29d8ca82.chunk.css.map": "/korowood/static/css/main.29d8ca82.chunk.css.map",
-    "static/js/2.b3a17350.chunk.js.LICENSE.txt": "/korowood/static/js/2.b3a17350.chunk.js.LICENSE.txt",
-    "static/media/logo.04fe0360.svg": "/korowood/static/media/logo.04fe0360.svg"
+    "static/css/main.ad2f4287.chunk.css.map": "/korowood/static/css/main.ad2f4287.chunk.css.map",
+    "static/js/2.7bdb0d93.chunk.js.LICENSE.txt": "/korowood/static/js/2.7bdb0d93.chunk.js.LICENSE.txt",
+    "static/media/logo.04fe0360.svg": "/korowood/static/media/logo.04fe0360.svg",
+    "static/media/paysage1.176f57c3.jpg": "/korowood/static/media/paysage1.176f57c3.jpg",
+    "static/media/paysage2.af405e24.jpg": "/korowood/static/media/paysage2.af405e24.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.602d80d1.js",
-    "static/js/2.b3a17350.chunk.js",
-    "static/css/main.29d8ca82.chunk.css",
-    "static/js/main.10dc687d.chunk.js"
+    "static/js/runtime-main.05b504eb.js",
+    "static/js/2.7bdb0d93.chunk.js",
+    "static/css/main.ad2f4287.chunk.css",
+    "static/js/main.2995a595.chunk.js"
   ]
 }
