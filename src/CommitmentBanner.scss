@@ -1,0 +1,119 @@
+.Commitment-banner {
+    position: relative;
+    height: 210px;
+    width: 75%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: 0px 0px 12px 0px #00000035;
+    box-shadow: 0px 0px 12px 0px #00000035;
+    &:nth-child(odd) {
+        align-self: flex-end;
+        .Commitment-caption {
+            position: absolute;
+            width: 75%;
+            height: 100%;
+            right: 0;
+            top: 0;
+            background-color: #00000065;
+            h3 {
+                position: absolute;
+                left: 5%;
+                top: 0;
+                bottom: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Roboto', sans-serif;
+                color: #eeeeee;
+                font-size: calc(27px + 7 * ((100vw - 1000px) / 700));
+                font-weight: 600;
+            }
+        }
+    }
+    &:nth-child(even) {
+        align-self: flex-start;
+        .Commitment-caption {
+            position: absolute;
+            width: 75%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #00000050;
+            h3 {
+                position: absolute;
+                right: 5%;
+                top: 0;
+                bottom: 0;
+                margin-top: auto;
+                margin-bottom: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Roboto', sans-serif;
+                color: #eeeeee;
+                font-size: calc(27px + 7 * ((100vw - 1000px) / 700));
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .Commitment-banner {
+        height: calc(125px + 7 * ((100vw - 1000px) / 700));
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .Commitment-banner {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &:nth-child(odd) {
+            .Commitment-caption {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #00000050;
+                h3 {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: calc(22px + 7 * ((100vw - 780px) / 700));
+                }
+            }
+        }
+        &:nth-child(even) {
+            .Commitment-caption {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #00000050;
+                h3 {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: calc(22px + 7 * ((100vw - 780px) / 700));
+                }
+            }
+        }
+    }
+}
