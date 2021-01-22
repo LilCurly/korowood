@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/korowood/static/css/main.2fda7d4d.chunk.css",
+    "main.css": "/korowood/static/css/main.68c7a305.chunk.css",
     "main.js": "/korowood/static/js/main.b9198d5a.chunk.js",
     "main.js.map": "/korowood/static/js/main.b9198d5a.chunk.js.map",
     "runtime-main.js": "/korowood/static/js/runtime-main.b18b262a.js",
@@ -10,7 +10,7 @@
     "static/js/3.2da57f1b.chunk.js": "/korowood/static/js/3.2da57f1b.chunk.js",
     "static/js/3.2da57f1b.chunk.js.map": "/korowood/static/js/3.2da57f1b.chunk.js.map",
     "index.html": "/korowood/index.html",
-    "static/css/main.2fda7d4d.chunk.css.map": "/korowood/static/css/main.2fda7d4d.chunk.css.map",
+    "static/css/main.68c7a305.chunk.css.map": "/korowood/static/css/main.68c7a305.chunk.css.map",
     "static/js/2.0925c1d6.chunk.js.LICENSE.txt": "/korowood/static/js/2.0925c1d6.chunk.js.LICENSE.txt",
     "static/media/logo.04fe0360.svg": "/korowood/static/media/logo.04fe0360.svg",
     "static/media/paysage1.176f57c3.jpg": "/korowood/static/media/paysage1.176f57c3.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.b18b262a.js",
     "static/js/2.0925c1d6.chunk.js",
-    "static/css/main.2fda7d4d.chunk.css",
+    "static/css/main.68c7a305.chunk.css",
     "static/js/main.b9198d5a.chunk.js"
   ]
 }
