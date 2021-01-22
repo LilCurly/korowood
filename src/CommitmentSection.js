@@ -3,10 +3,11 @@ import './CommitmentSection.scss';
 import React from 'react'
 import {useInView} from 'react-intersection-observer'
 import {motion} from 'framer-motion'
+import {withGetScreen} from 'react-getscreen'
 
 import CommitmentBanner from './CommitmentBanner'
 
-function CommitmentSection() {
+function CommitmentSection(props) {
 
     const {ref, inView, entry} = useInView({
         triggerOnce: false,
@@ -26,8 +27,14 @@ function CommitmentSection() {
         }
     }
 
+    const getStyle = () => {
+        if (props.isMobile()) {
+            return {paddingBottom: '0px'}
+        }
+    }
+
     return (
-        <div className="Commitment-section">
+        <div className="Commitment-section" style={getStyle()}>
             <motion.div className="Commitment-header" ref={ref} initial={{ opacity: 0, y: 40}} animate={getAnimation()} transition={{duration: 0.6, ease: "easeOut", delay: 0.1}}>
                 <h2>Nos Engagements</h2>
             </motion.div>
@@ -40,4 +47,4 @@ function CommitmentSection() {
     );
 }
 
-export default CommitmentSection;
+export default withGetScreen(CommitmentSection, {mobileLimit: 1000, tabletLimit: 1000, shouldListenOnResize: true});

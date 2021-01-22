@@ -2,14 +2,15 @@
 import './App.scss';
 
 import React, {useState, useEffect} from 'react'
+import {gsap, TimelineLite, Power1} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import {withGetScreen} from 'react-getscreen'
 
 import Header from './Header'
 import HeaderHamburgerNavigation from './HeaderHamburgerNavigation'
 import AboutUsSection from './AboutUsSection'
 import CommitmentSection from './CommitmentSection'
-import {gsap, TimelineLite, Power1} from 'gsap'
-import {ScrollTrigger} from 'gsap/ScrollTrigger'
-import {withGetScreen} from 'react-getscreen'
+import CreationSection from './CreationSection'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -33,6 +34,7 @@ function App(props) {
       <div className="Body">
         <AboutUsSection />
         <CommitmentSection />
+        <CreationSection />
       </div>
     </div>
   );
