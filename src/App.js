@@ -11,6 +11,8 @@ import HeaderHamburgerNavigation from './HeaderHamburgerNavigation'
 import AboutUsSection from './AboutUsSection'
 import CommitmentSection from './CommitmentSection'
 import CreationSection from './CreationSection'
+import GetCatalog from './GetCatalog'
+import FooterSection from './FooterSection';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,6 +37,8 @@ function App(props) {
         <AboutUsSection />
         <CommitmentSection />
         <CreationSection />
+        <GetCatalog />
+        <FooterSection />
       </div>
     </div>
   );

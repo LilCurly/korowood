@@ -88,7 +88,7 @@ function CreationSection(props) {
     return(
         <div className="CreationSection">
             <motion.div ref={ref} className="CreationSection-Header" initial={getInitialValueHeader()} animate={getAnimationHeader()} transition={getTransitionHeader()}>
-                <h2 style={getStyle()}>Nos Créations</h2>
+                <h2 style={getStyle()}>Nos Réalisations</h2>
             </motion.div>
             <motion.div className="CreationSection-Carousel" initial={getInitialValueCarousel()} animate={getAnimationCarousel()} transition={getTransitionCarousel()}>
                 <Carousel onSelect={() => {
